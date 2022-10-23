@@ -1,0 +1,14 @@
+/* ------ Polices -------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap');
+
+@import "./utils/variables";
+@import "./utils/mixins";
+
+@import "./base/base";
+@import "./base/typography";
+
+@import "./layout/header";
+@import "./layout/form";
+@import "./layout/container";
+
+@import "./pages/accueil";

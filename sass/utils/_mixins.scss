@@ -1,0 +1,11 @@
+@mixin formulaire-color-deg {
+    
+    background: linear-gradient(180deg,$color-secondary 0%, $color-primary 80%);
+    color:white;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 2rem;
+    border:none;
+    box-shadow:0.2rem 0.2rem 0.2rem $color-input;
+
+}

@@ -1,0 +1,17 @@
+.header {
+    margin-top:2rem;
+    &__container{
+        margin-bottom: 0.2rem;
+        width:24rem;
+        height:3rem ;
+        box-shadow: 0rem 0.2rem 0.1rem rgba(218, 204, 204, 0.874);
+    }
+    &__logo {
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        height: 65%;
+        object-fit: contain;
+    }
+}

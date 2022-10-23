@@ -1,0 +1,21 @@
+.form-header{
+    display:flex;
+    justify-content: center;
+    background-color:rgb(234,234,234);
+    &__container{
+        margin-left: 5rem; 
+    }
+    &__span{
+        margin-right: 0.5rem;
+    }
+    &__input{
+        border: none;
+        background-color:$color-input;
+        font-weight: bold;
+    }
+}
+.form-deg{
+    &__input{
+        @include formulaire-color-deg;
+    }
+}

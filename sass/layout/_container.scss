@@ -1,0 +1,14 @@
+.section-reservation
+{
+    padding:3rem 2rem;
+    background-color: $color-background-primary;
+    & h1{
+        margin:0;
+        text-align: center;
+    }
+    & p{
+        font-size:1.1rem;
+        text-align: center;
+        color:$color-txt;
+    }
+}

@@ -1,3 +1,80 @@
+/* ------ Polices -------*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap");
+* {
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.shri-titre {
+  font-family: "Shrikhand", sans-serif;
+}
+
+.header {
+  margin-top: 2rem;
+}
+.header__container {
+  margin-bottom: 0.2rem;
+  width: 24rem;
+  height: 3rem;
+  box-shadow: 0rem 0.2rem 0.1rem rgba(218, 204, 204, 0.874);
+}
+.header__logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 65%;
+  object-fit: contain;
+}
+
+.form-header {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(234, 234, 234);
+}
+.form-header__container {
+  margin-left: 5rem;
+}
+.form-header__span {
+  margin-right: 0.5rem;
+}
+.form-header__input {
+  border: none;
+  background-color: #eaeaea;
+  font-weight: bold;
+}
+
+.form-deg__input {
+  background: linear-gradient(180deg, #FF79DA 0%, #9356DC 80%);
+  color: white;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 2rem;
+  border: none;
+  box-shadow: 0.2rem 0.2rem 0.2rem #eaeaea;
+}
+
+.section-reservation {
+  padding: 3rem 2rem;
+  background-color: #f6f6f6;
+}
+.section-reservation h1 {
+  margin: 0;
+  text-align: center;
+}
+.section-reservation p {
+  font-size: 1.1rem;
+  text-align: center;
+  color: #7d7d7d;
+}
+
+.section-reservation {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.4rem;
+}
 
 /*# sourceMappingURL=style.css.map */
