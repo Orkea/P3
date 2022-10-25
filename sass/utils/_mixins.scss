@@ -1,11 +1,17 @@
+@mixin ombre {
+    box-shadow:0.4rem 0.4rem 0.3rem $color-input;
+}
+
 @mixin formulaire-color-deg {
-    
+
     background: linear-gradient(180deg,$color-secondary 0%, $color-primary 80%);
     color:white;
     font-weight: bold;
     padding: 1rem;
     border-radius: 2rem;
     border:none;
-    box-shadow:0.2rem 0.2rem 0.2rem $color-input;
-
+    @include ombre;
+}
+@mixin color-light ($couleur){
+    background-color:lighten($couleur,35%);
 }
