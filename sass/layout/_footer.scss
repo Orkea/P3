@@ -1,0 +1,31 @@
+.footer {
+    background-color: $color-footer;
+    color:white;
+    padding: 1.7rem 0;
+    &__list{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap:1rem;
+        padding-left: $size-gauche;
+    }
+    &__li{
+        display:flex;
+        align-items: center;
+        
+    }
+    &__txt{
+        margin: 0;
+    }
+    &__icon{
+        width:1.2rem ;
+        margin-right: .5rem;
+    }
+}
+
+h4{
+    @extend .shri-titre;
+    padding-left: $size-gauche;
+    font-weight:100;
+    margin-top: 0;
+}

@@ -8,7 +8,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.shri-titre {
+.shri-titre, h4 {
   font-family: "Shrikhand", sans-serif;
 }
 
@@ -71,6 +71,36 @@ body {
   color: #7d7d7d;
 }
 
+.footer {
+  background-color: #353535;
+  color: white;
+  padding: 1.7rem 0;
+}
+.footer__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-left: 1.5rem;
+}
+.footer__li {
+  display: flex;
+  align-items: center;
+}
+.footer__txt {
+  margin: 0;
+}
+.footer__icon {
+  width: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+h4 {
+  padding-left: 1.5rem;
+  font-weight: 100;
+  margin-top: 0;
+}
+
 .section-reservation {
   display: flex;
   flex-direction: column;
@@ -85,6 +115,7 @@ h2 {
   margin-left: 1.5rem;
 }
 
+/* --------section fonctionnement ------ */
 .section-fonctionnement__action {
   position: relative;
 }

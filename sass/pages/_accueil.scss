@@ -9,8 +9,9 @@
 
 h2 {
     font-weight: 800;
-    margin-left: 1.5rem;
+    margin-left: $size-gauche;
 }
+/* --------section fonctionnement ------ */
 .section-fonctionnement{
     &__action{
         position: relative;
