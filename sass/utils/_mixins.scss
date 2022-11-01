@@ -1,9 +1,8 @@
 @mixin ombre {
-    box-shadow:0.4rem 0.4rem 0.3rem $color-input;
+    box-shadow:0.4rem 0.4rem 0.3rem rgba(210, 200, 200, 0.97);
 }
 
 @mixin formulaire-color-deg {
-
     background: linear-gradient(180deg,$color-secondary 0%, $color-primary 80%);
     color:white;
     font-weight: bold;
@@ -12,6 +11,20 @@
     border:none;
     @include ombre;
 }
+
 @mixin color-light ($couleur){
-    background-color:lighten($couleur,35%);
+    background-color:lighten($couleur,20%);
+}
+
+@mixin color-dark ($couleur) {
+    color: darken($couleur, 35%);
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin border-r{
+    border-radius: $size-border-r;
 }
