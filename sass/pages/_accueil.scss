@@ -7,7 +7,7 @@
     }
 }
 
-h2 {
+.accueil-h2 {
     font-weight: 800;
     margin-left: $size-gauche;
 }
@@ -42,6 +42,9 @@ h2 {
         @include border-r;
         column-gap: .9rem;
         @include ombre;
+        &:hover{
+            @include color-light ($color-primary);
+        }
         
         &:hover .texticon--hover{
             color:$color-primary;
@@ -108,7 +111,7 @@ h2 {
         position: absolute;
         bottom: 2rem;
         right: 1rem;
-        font-size: 1.5rem;
+        font-size: $size-coeur;
 
     }
 }

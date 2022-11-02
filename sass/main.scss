@@ -7,9 +7,13 @@
 @import "./base/base";
 @import "./base/typography";
 
+@import "./components/liens";
+@import "./components/images";
+
 @import "./layout/header";
 @import "./layout/form";
 @import "./layout/container";
 @import "./layout/footer";
+@import "./layout/main";
 
 @import "./pages/accueil";

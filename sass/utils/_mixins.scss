@@ -2,18 +2,18 @@
     box-shadow:0.4rem 0.4rem 0.3rem rgba(210, 200, 200, 0.97);
 }
 
-@mixin formulaire-color-deg {
+@mixin formulaire-color-deg ($size-padding-form:3rem) {
     background: linear-gradient(180deg,$color-secondary 0%, $color-primary 80%);
     color:white;
     font-weight: bold;
-    padding: 1rem;
+    padding: 1rem $size-padding-form;
     border-radius: 2rem;
     border:none;
     @include ombre;
 }
 
 @mixin color-light ($couleur){
-    background-color:lighten($couleur,20%);
+    background-color:lighten($couleur,35%);
 }
 
 @mixin color-dark ($couleur) {
@@ -27,4 +27,10 @@
 }
 @mixin border-r{
     border-radius: $size-border-r;
+}
+
+@mixin txt-color-light {
+    font-weight: lighter;
+    font-size: 1.1rem;
+    color: $color-txt;
 }

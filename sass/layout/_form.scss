@@ -15,7 +15,11 @@
     }
 }
 .form-deg{
+    text-align: center;
     &__input{
+        @include formulaire-color-deg (1rem);
+    }
+    &__restaurant{
         @include formulaire-color-deg;
     }
 }

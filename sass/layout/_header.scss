@@ -5,6 +5,12 @@
         width:24rem;
         height:3rem ;
         box-shadow: 0rem 0.2rem 0.1rem rgba(218, 204, 204, 0.874);
+        &--noshadow{
+            box-shadow: none;
+            display:flex;
+            align-items: center;
+            position: relative;
+        }
     }
     &__logo {
         display:block;
@@ -14,4 +20,5 @@
         height: 65%;
         object-fit: contain;
     }
+    
 }
