@@ -34,3 +34,16 @@
     font-size: 1.1rem;
     color: $color-txt;
 }
+
+@mixin tablet {
+    @media all and (min-width: map-get($breakpoints, tablet)){
+        @content;
+    }
+
+}
+
+@mixin desktop {
+    @media all and (min-width: map-get($breakpoints, desktop)){
+        @content;
+    }   
+} 

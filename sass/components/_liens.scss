@@ -1,4 +1,4 @@
-.lien_retour{
+.lien__retour{
     text-decoration: none;
     color:black;
     padding-left: 1rem;
@@ -6,4 +6,8 @@
     & i{
        font-size:1.5rem;
     }
+}
+.lien__footer{
+    text-decoration: none;
+    color:white;
 }

@@ -1,8 +1,11 @@
 .menu-image{
     position: relative;
     &__container{
-        width: 24rem;
-        height: 15rem;
+        width: 100%;
+        height: $heigth-menu-image;
+            @include desktop{
+                height: calc( $heigth-menu-image + 10rem);
+            }
     }
     &__img{
         width: 100%;

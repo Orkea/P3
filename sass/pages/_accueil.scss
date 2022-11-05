@@ -11,46 +11,6 @@
     font-weight: 800;
     margin-left: $size-gauche;
 }
-/* --------section fonctionnement ------ */
-.section-fonctionnement{
-    &__action{
-        position: relative;
-    }
-    
-    &__icon{
-        position: absolute;
-        top: 1.5rem;
-        left: 1.3rem;
-        display: inline-flex;
-        background-color: $color-primary;
-        border-radius: 50%;
-        color: white;
-        z-index: 1;
-        width: 1.5rem;
-        height: 1.5rem;
-        justify-content: center;
-        align-items: center;
-        font-size: small;
-
-    }
-    &__text{
-        @include flex-center;
-        font-weight: bold;
-        background-color: $color-input;
-        margin: 2rem;
-        padding: 1.9rem;
-        @include border-r;
-        column-gap: .9rem;
-        @include ombre;
-        &:hover{
-            @include color-light ($color-primary);
-        }
-        
-        &:hover .texticon--hover{
-            color:$color-primary;
-        }
-    }
-}
 
 /* ------ section restaurants --------*/
 .section-restaurant{
@@ -59,10 +19,18 @@
 
 
 }
-.section-restaurant-card-container{
+.section-restaurant-card{
     @include flex-center;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
+        @include tablet {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        @include desktop{
+            flex-wrap: nowrap;
+            margin-top: 2rem;
+        }
 }
 .lien-restaurant{
     text-decoration: none;
@@ -112,7 +80,12 @@
         bottom: 2rem;
         right: 1rem;
         font-size: $size-coeur;
-
+        &:hover{
+            font-weight: bold;
+            color:$color-primary;
+            transform-origin: bottom;
+            transition: color 1000ms, font-weight 1000ms;
+        }
     }
 }
 

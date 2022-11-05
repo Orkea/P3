@@ -13,19 +13,95 @@
     }
 }
 
+/* --------section fonctionnement ------ */
+.section-fonctionnement{
+    @include desktop{
+        margin: 4rem 0;
+    }
+    &__container{
+        @include desktop{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &__action{
+        position: relative;
+            @include tablet {
+                padding: 0 10rem;
+            }
+            @include desktop{
+                padding: 0;
+                width:calc(100% / 3);
+            }
+    }
+    
+    &__icon{
+        position: absolute;
+        top: $size-top-icon-f;
+        left: $size-left-icon-f;
+        display: inline-flex;
+        background-color: $color-primary;
+        border-radius: 50%;
+        color: white;
+        z-index: 1;
+        width: 1.5rem;
+        height: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        font-size: small;
+        
+            @include tablet {
+                left:calc( $size-left-icon-f + 10rem);
+            }
+            
+            @include desktop{
+                top:calc( $size-top-icon-f + 2rem);
+                left: $size-left-icon-f;
+            }
+
+    }
+    &__text{
+        font-weight: bold;
+        background-color: $color-input;
+        margin: 2rem;
+        padding: 1.9rem;
+        column-gap: .9rem;
+            @include flex-center;
+            @include border-r;      
+            @include ombre;
+
+        &:hover{
+            @include color-light ($color-primary);
+        }
+        
+        &:hover .texticon--hover{
+            color:$color-primary;
+        }
+    }
+}
+
 /* ----- section menu des restaurants ------*/
 .menu{
     background-color: $color-input;
     border-radius: 2rem 2rem 0 0;
     padding: 0 1rem 3rem 1rem;
     position: relative;
-    top:-4.2rem;
+    top:$size-top;
+    @include tablet{
+        border-radius: 5rem 5rem 0 0;
+        padding: 0 5rem 3rem 5rem;
+        top:calc( $size-top - 1rem);
+    }
+    @include desktop{
+        padding: 0 7rem 5rem 7rem;
+    }
 }
 .menu-entete{
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 20rem;
+    padding-top: 1.2rem ;
     &__titre{
         @extend %shri-titre;
         font-size: 1.8rem;
@@ -44,7 +120,11 @@
     flex-direction: column;
     row-gap: 1.1rem;
     margin-bottom: 3rem;
+    @include desktop{
+        padding: 2rem 17rem;
+    }
 }
+
 .menu-box-plat{
     background-color: white;
     width: 100%;
