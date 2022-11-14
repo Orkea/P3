@@ -83,7 +83,6 @@
         &:hover{
             font-weight: bold;
             color:$color-primary;
-            transform-origin: bottom;
             transition: color 1000ms, font-weight 1000ms;
         }
     }

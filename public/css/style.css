@@ -425,7 +425,6 @@ h4 {
 .restaurant-card__icon:hover {
   font-weight: bold;
   color: #9356DC;
-  transform-origin: bottom;
   transition: color 1000ms, font-weight 1000ms;
 }
 
