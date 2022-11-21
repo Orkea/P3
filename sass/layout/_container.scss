@@ -113,8 +113,9 @@
 .menu-box-plat{
     display: flex;
     align-items: center;
-
+    animation : menu 1800ms 500ms both cubic-bezier(.9,0,.1,1);
 }
+
 .menu-box{
     display: flex;
     flex-direction: column;

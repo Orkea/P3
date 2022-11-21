@@ -45,7 +45,7 @@
     background-color: white;
     position: relative;
     @include border-r;
-   @include ombre;
+    @include ombre;
     &__container{
         height:10rem ;
         border-radius: $size-border-r $size-border-r 0 0;
@@ -76,14 +76,36 @@
         margin-top: .3rem;
     }
     &__icon{
+        &::before{
         position: absolute;
         bottom: 2rem;
         right: 1rem;
         font-size: $size-coeur;
+        transition: opacity 1s ease-in-out;
+        }
         &:hover{
-            font-weight: bold;
-            color:$color-primary;
-            transition: color 1000ms, font-weight 1000ms;
+            &::before{
+                opacity:0;
+            }
+            &::after{
+                opacity:1;
+                
+            }
+        } 
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 2rem;
+            right: 1rem;
+            width: 24px;
+            height: 24px;
+            font-size: $size-coeur;
+            font-weight: bolder;
+            background: linear-gradient($color-secondary, $color-primary);
+            background-clip:text;
+            color:transparent;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
         }
     }
 }

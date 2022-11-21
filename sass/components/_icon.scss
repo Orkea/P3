@@ -1,0 +1,33 @@
+/*.menu-entete__icon{
+    &::before{
+        position: absolute;
+        bottom: 2rem;
+        right: 1rem;
+        font-size: $size-coeur;
+        transition: opacity 300ms ease-in-out;
+        }
+        &:hover{
+            &::before{
+                opacity:0;
+            }
+            &::after{
+                opacity:1;
+                
+            }
+        } 
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 2rem;
+            right: 1rem;
+            width: 24px;
+            height: 24px;
+            font-size: $size-coeur;
+            font-weight: bolder;
+            background: linear-gradient($color-secondary, $color-primary);
+            background-clip:text;
+            color:transparent;
+            opacity: 0;
+            transition: opacity 450ms ease-in-out;
+        }
+}*/
