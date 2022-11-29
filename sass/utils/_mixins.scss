@@ -34,6 +34,11 @@
     font-size: 1.1rem;
     color: $color-txt;
 }
+@mixin txt-hidden {
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+}
 
 @mixin tablet {
     @media all and (min-width: map-get($breakpoints, tablet)){
