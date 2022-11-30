@@ -72,6 +72,7 @@
 
         &:hover{
             @include color-light ($color-primary);
+            @include ombre-hover;
         }
         
         &:hover .texticon--hover{
@@ -138,7 +139,7 @@
             animation-delay: $anim-menu-delay*$i;
         }
     }
-    &:active{
+    &:hover{
         cursor:pointer;
             & .menu-box-plat__body{
                 width:13.5rem;
@@ -179,7 +180,7 @@
         position: absolute;
         right:0;
         background-color: $color-tertiary;
-        padding:1.7rem;
+        padding:1.5rem;
         border-radius: 0 1rem 1rem 0;
         opacity: 0;
         transform: scalex(0);
@@ -188,7 +189,7 @@
     }
     &__icon{
         display: block;
-        font-size: large;
+        font-size:1.5rem;
         font-weight: bold;
         color: white;
         transform: rotate(-360deg);

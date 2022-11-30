@@ -1,5 +1,9 @@
 @mixin ombre {
-    box-shadow:0.4rem 0.4rem 0.3rem rgba(210, 200, 200, 0.97);
+    box-shadow:0.4rem 0.4rem 0.3rem $color-bow-shadow;
+}
+@mixin ombre-hover {
+    box-shadow:0.4rem 0.4rem 0.3rem darken($color-bow-shadow,15%);
+    
 }
 
 @mixin formulaire-color-deg ($size-padding-form:3rem) {

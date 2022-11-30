@@ -184,7 +184,10 @@ h4, .menu-entete__titre {
   padding: 1rem 1rem;
   border-radius: 2rem;
   border: none;
-  box-shadow: 0.4rem 0.4rem 0.3rem rgba(210, 200, 200, 0.97);
+  box-shadow: 0.4rem 0.4rem 0.3rem rgb(210, 200, 200);
+}
+.form-deg__input:hover {
+  box-shadow: 0.4rem 0.4rem 0.3rem #b09e9e;
 }
 .form-deg__restaurant {
   background: linear-gradient(180deg, #FF79DA 0%, #9356DC 80%);
@@ -193,7 +196,10 @@ h4, .menu-entete__titre {
   padding: 1rem 3rem;
   border-radius: 2rem;
   border: none;
-  box-shadow: 0.4rem 0.4rem 0.3rem rgba(210, 200, 200, 0.97);
+  box-shadow: 0.4rem 0.4rem 0.3rem rgb(210, 200, 200);
+}
+.form-deg__restaurant:hover {
+  box-shadow: 0.4rem 0.4rem 0.3rem #b09e9e;
 }
 
 /* ------ section reservation page d'accueil ------*/
@@ -274,10 +280,11 @@ h4, .menu-entete__titre {
   justify-content: center;
   align-items: center;
   border-radius: 1.6rem;
-  box-shadow: 0.4rem 0.4rem 0.3rem rgba(210, 200, 200, 0.97);
+  box-shadow: 0.4rem 0.4rem 0.3rem rgb(210, 200, 200);
 }
 .section-fonctionnement__text:hover {
   background-color: #f2eafb;
+  box-shadow: 0.4rem 0.4rem 0.3rem #b09e9e;
 }
 .section-fonctionnement__text:hover .texticon--hover {
   color: #9356DC;
@@ -339,7 +346,7 @@ h4, .menu-entete__titre {
   border-radius: 1rem;
   position: relative;
   /* z-index: 1;*/
-  box-shadow: 0.4rem 0.4rem 0.3rem rgba(210, 200, 200, 0.97);
+  box-shadow: 0.4rem 0.4rem 0.3rem rgb(210, 200, 200);
   animation: menu 250ms backwards ease-out;
 }
 .menu-box-plat--1 {
@@ -354,20 +361,20 @@ h4, .menu-entete__titre {
 .menu-box-plat--4 {
   animation-delay: 800ms;
 }
-.menu-box-plat:active {
+.menu-box-plat:hover {
   cursor: pointer;
 }
-.menu-box-plat:active .menu-box-plat__body {
+.menu-box-plat:hover .menu-box-plat__body {
   width: 13.5rem;
 }
-.menu-box-plat:active .menu-box-plat__body + .menu-box-plat__prix {
+.menu-box-plat:hover .menu-box-plat__body + .menu-box-plat__prix {
   animation: menu-body 400ms forwards;
 }
-.menu-box-plat:active .menu-box-plat__btn {
+.menu-box-plat:hover .menu-box-plat__btn {
   opacity: 1;
   transform: scaleX(1);
 }
-.menu-box-plat:active .menu-box-plat__btn > .menu-box-plat__icon {
+.menu-box-plat:hover .menu-box-plat__btn > .menu-box-plat__icon {
   transform: rotate(0deg);
 }
 .menu-box-plat__body {
@@ -398,7 +405,7 @@ h4, .menu-entete__titre {
   position: absolute;
   right: 0;
   background-color: #99E2D0;
-  padding: 1.7rem;
+  padding: 1.5rem;
   border-radius: 0 1rem 1rem 0;
   opacity: 0;
   transform: scalex(0);
@@ -407,7 +414,7 @@ h4, .menu-entete__titre {
 }
 .menu-box-plat__icon {
   display: block;
-  font-size: large;
+  font-size: 1.5rem;
   font-weight: bold;
   color: white;
   transform: rotate(-360deg);
@@ -507,7 +514,7 @@ h4 {
   background-color: white;
   position: relative;
   border-radius: 1.6rem;
-  box-shadow: 0.4rem 0.4rem 0.3rem rgba(210, 200, 200, 0.97);
+  box-shadow: 0.4rem 0.4rem 0.3rem rgb(210, 200, 200);
 }
 .restaurant-card__container {
   height: 10rem;

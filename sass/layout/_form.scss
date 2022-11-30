@@ -19,8 +19,14 @@
     text-align: center;
     &__input{
         @include formulaire-color-deg (1rem);
+        &:hover{
+            @include ombre-hover;
+        }
     }
     &__restaurant{
         @include formulaire-color-deg;
+        &:hover{
+            @include ombre-hover;
+        }
     }
 }
