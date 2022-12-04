@@ -131,7 +131,6 @@
     height: 4.5rem;
     border-radius: 1rem;
     position: relative;
-   /* z-index: 1;*/
     @include ombre;
     animation : menu 250ms backwards ease-out;
     @for $i from 1 through 4 {
@@ -139,12 +138,12 @@
             animation-delay: $anim-menu-delay*$i;
         }
     }
-    &:hover{
+    &:hover, &:active{
         cursor:pointer;
             & .menu-box-plat__body{
                 width:13.5rem;
                 & + .menu-box-plat__prix{
-                    animation: menu-body 400ms forwards;
+                    animation: menu-body 400ms ease-out forwards;
                 }
             }
             &  .menu-box-plat__btn{

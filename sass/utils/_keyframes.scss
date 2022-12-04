@@ -42,3 +42,35 @@
     }
 }
 
+@keyframes loader{
+    from{
+        box-shadow: 
+        0 0 0 $color-primary,
+        0 0 0 $color-secondary,
+        0 0 0 $color-tertiary,
+        0 0 0 rgb(246, 185,246);
+    }
+    to{
+        box-shadow: 
+        0 -.5rem 0 $color-primary,
+        -.5rem 0 0 $color-secondary,
+       0 .5rem 0 $color-tertiary,
+       .5rem 0 0 rgb(246, 185,246);
+    }
+}
+@keyframes loader-spinner{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes loader-opacity{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
