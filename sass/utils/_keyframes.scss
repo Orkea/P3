@@ -24,7 +24,7 @@
 @keyframes menu {
     0%{
         opacity: 0;
-        transform: translateY(10px);
+        transform: translateY(50px);
         
     }
     100%{
@@ -52,10 +52,11 @@
     }
     to{
         box-shadow: 
-        0 -.5rem 0 $color-primary,
-        -.5rem 0 0 $color-secondary,
-       0 .5rem 0 $color-tertiary,
-       .5rem 0 0 rgb(246, 185,246);
+        0 -.7rem 0 $color-primary,
+        -.7rem 0 0 $color-secondary,
+       0 .7rem 0 $color-tertiary,
+       .7rem 0 0 rgb(246, 185,246);
+        opacity: 0;
     }
 }
 @keyframes loader-spinner{
@@ -66,11 +67,13 @@
         transform: rotate(360deg);
     }
 }
+
 @keyframes loader-opacity{
     from{
         opacity: 1;
     }
     to{
         opacity: 0;
+        z-index:-1;
     }
 }
