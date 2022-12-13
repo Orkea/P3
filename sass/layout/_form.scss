@@ -16,6 +16,7 @@
     }
 }
 .form-deg{
+    width: 100%;
     text-align: center;
     &__input{
         @include formulaire-color-deg (1rem);

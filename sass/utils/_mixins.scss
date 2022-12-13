@@ -24,6 +24,27 @@
     color: darken($couleur, 35%);
 }
 
+@mixin heart-move{
+    font-size: $size-coeur;
+    position: absolute;
+        &:hover{  
+            &::after{
+                opacity:1; 
+            }
+        } 
+        &::after{
+            content: "";
+            position: absolute;
+            right: 0;
+            font-weight: bolder;
+            background: linear-gradient($color-secondary, $color-primary);
+            background-clip:text;
+            color:transparent;
+            opacity: 0;
+            transition: opacity 1s ease-in-out; 
+        }
+}
+
 @mixin flex-center {
     display: flex;
     justify-content: center;
