@@ -1,4 +1,4 @@
-.lien__retour{
+.back__link{
     text-decoration: none;
     color:black;
     padding-left: 1rem;
@@ -7,7 +7,16 @@
        font-size:1.5rem;
     }
 }
-.lien__footer{
+
+.restaurant-link{
+    text-decoration: none;
+    color: black;
+    width:21rem;
+    height:15rem;
+    @include border-r;
+}
+
+.footer__link{
     text-decoration: none;
     color:white;
 }

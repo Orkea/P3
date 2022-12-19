@@ -1,13 +1,3 @@
 %shri-titre{
     font-family: 'Shrikhand', sans-serif;
 }
-
-.menu-box{
-    &__titre{
-        @include txt-color-light;
-        margin-bottom: 0;
-        &--underline{
-            border-bottom: .2rem solid $color-tertiary;
-        }
-    }
-}

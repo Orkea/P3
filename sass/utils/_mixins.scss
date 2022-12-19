@@ -17,7 +17,7 @@
 }
 
 @mixin color-light ($couleur){
-    background-color:lighten($couleur,35%);
+    background-color:lighten($couleur,2%);
 }
 
 @mixin color-dark ($couleur) {
@@ -27,7 +27,7 @@
 @mixin heart-move{
     font-size: $size-coeur;
     position: absolute;
-        &:hover{  
+        &:hover, &:active{  
             &::after{
                 opacity:1; 
             }
@@ -41,6 +41,7 @@
             background-clip:text;
             color:transparent;
             opacity: 0;
+            transform-origin: bottom;
             transition: opacity 1s ease-in-out; 
         }
 }

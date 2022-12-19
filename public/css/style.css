@@ -80,31 +80,29 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-h4, .menu-entete__titre, .loader-box__text {
+h4, .menu-header__title, .loader-box__text {
   font-family: "Shrikhand", sans-serif;
 }
 
-.menu-box__titre {
-  font-weight: lighter;
-  font-size: 1.1rem;
-  color: #7d7d7d;
-  margin-bottom: 0;
-}
-.menu-box__titre--underline {
-  border-bottom: 0.2rem solid #99E2D0;
-}
-
-.lien__retour {
+.back__link {
   text-decoration: none;
   color: black;
   padding-left: 1rem;
   position: absolute;
 }
-.lien__retour i {
+.back__link i {
   font-size: 1.5rem;
 }
 
-.lien__footer {
+.restaurant-link {
+  text-decoration: none;
+  color: black;
+  width: 21rem;
+  height: 15rem;
+  border-radius: 1.6rem;
+}
+
+.footer__link {
   text-decoration: none;
   color: white;
 }
@@ -200,14 +198,8 @@ h4, .menu-entete__titre, .loader-box__text {
 }
 .header__container {
   margin-bottom: 0.2rem;
-  width: 24rem;
   height: 3rem;
   box-shadow: 0rem 0.2rem 0.1rem rgba(218, 204, 204, 0.874);
-}
-@media all and (min-width: 768px) {
-  .header__container {
-    width: 100%;
-  }
 }
 .header__container--noshadow {
   box-shadow: none;
@@ -271,22 +263,6 @@ h4, .menu-entete__titre, .loader-box__text {
   box-shadow: 0.4rem 0.4rem 0.3rem #b09e9e;
 }
 
-/* ------ section reservation page d'accueil ------*/
-.section-reservation {
-  padding: 3rem 2rem;
-  background-color: #f6f6f6;
-}
-.section-reservation h1 {
-  margin: 0;
-  text-align: center;
-}
-.section-reservation p {
-  text-align: center;
-  font-weight: lighter;
-  font-size: 1.1rem;
-  color: #7d7d7d;
-}
-
 /* --------section fonctionnement ------ */
 @media all and (min-width: 992px) {
   .section-fonctionnement {
@@ -299,16 +275,16 @@ h4, .menu-entete__titre, .loader-box__text {
     justify-content: space-between;
   }
 }
-.section-fonctionnement__action {
+.section-fonctionnement__box {
   position: relative;
 }
 @media all and (min-width: 768px) {
-  .section-fonctionnement__action {
+  .section-fonctionnement__box {
     padding: 0 10rem;
   }
 }
 @media all and (min-width: 992px) {
-  .section-fonctionnement__action {
+  .section-fonctionnement__box {
     padding: 0;
     width: 33.3333333333%;
   }
@@ -352,10 +328,10 @@ h4, .menu-entete__titre, .loader-box__text {
   box-shadow: 0.4rem 0.4rem 0.3rem rgb(210, 200, 200);
 }
 .section-fonctionnement__text:hover {
-  background-color: #f2eafb;
+  background-color: #efefef;
   box-shadow: 0.4rem 0.4rem 0.3rem #b09e9e;
 }
-.section-fonctionnement__text:hover .texticon--hover {
+.section-fonctionnement__text:hover .texticon {
   color: #9356DC;
 }
 
@@ -384,24 +360,24 @@ h4, .menu-entete__titre, .loader-box__text {
   }
 }
 
-.menu-entete {
+.menu-header {
   display: flex;
   align-items: center;
   width: 100%;
   padding-top: 1.2rem;
 }
-.menu-entete__titre {
+.menu-header__title {
   font-size: 1.8rem;
 }
-.menu-entete__icon {
+.menu-header__icon {
   padding-left: 19rem;
   font-size: 1.5rem;
   position: absolute;
 }
-.menu-entete__icon:hover::after {
+.menu-header__icon:hover::after, .menu-header__icon:active::after {
   opacity: 1;
 }
-.menu-entete__icon::after {
+.menu-header__icon::after {
   content: "\f004";
   position: absolute;
   right: 0;
@@ -410,6 +386,7 @@ h4, .menu-entete__titre, .loader-box__text {
   background-clip: text;
   color: transparent;
   opacity: 0;
+  transform-origin: bottom;
   transition: opacity 1s ease-in-out;
 }
 
@@ -419,12 +396,20 @@ h4, .menu-entete__titre, .loader-box__text {
   row-gap: 1.1rem;
   margin-bottom: 3rem;
 }
+.menu-box__title {
+  font-weight: lighter;
+  font-size: 1.1rem;
+  color: #7d7d7d;
+  margin-bottom: 0;
+}
+.menu-box__title--underline {
+  border-bottom: 0.2rem solid #99E2D0;
+}
 
-.menu-box-plat {
+.menu-box-meal {
   display: flex;
   align-items: center;
   background-color: white;
-  /*width: 100%;*/
   height: 4.5rem;
   border-radius: 1rem;
   position: relative;
@@ -432,63 +417,63 @@ h4, .menu-entete__titre, .loader-box__text {
   transition: width 450ms ease-out;
   animation: menu 1s backwards ease-out;
 }
-.menu-box-plat--1 {
+.menu-box-meal--1 {
   animation-delay: 200ms;
 }
-.menu-box-plat--2 {
+.menu-box-meal--2 {
   animation-delay: 400ms;
 }
-.menu-box-plat--3 {
+.menu-box-meal--3 {
   animation-delay: 600ms;
 }
-.menu-box-plat--4 {
+.menu-box-meal--4 {
   animation-delay: 800ms;
 }
-.menu-box-plat:hover, .menu-box-plat:active {
+.menu-box-meal:hover, .menu-box-meal:active {
   cursor: pointer;
 }
-.menu-box-plat:hover .menu-box-plat__body, .menu-box-plat:active .menu-box-plat__body {
+.menu-box-meal:hover .menu-box-meal__body, .menu-box-meal:active .menu-box-meal__body {
   width: 13.5rem;
 }
 @media all and (min-width: 768px) {
-  .menu-box-plat:hover .menu-box-plat__body, .menu-box-plat:active .menu-box-plat__body {
+  .menu-box-meal:hover .menu-box-meal__body, .menu-box-meal:active .menu-box-meal__body {
     width: 28.5rem;
   }
 }
 @media all and (min-width: 992px) {
-  .menu-box-plat:hover .menu-box-plat__body, .menu-box-plat:active .menu-box-plat__body {
-    width: 22rem;
+  .menu-box-meal:hover .menu-box-meal__body, .menu-box-meal:active .menu-box-meal__body {
+    width: 19.5rem;
   }
 }
-.menu-box-plat:hover .menu-box-plat__btn, .menu-box-plat:active .menu-box-plat__btn {
+.menu-box-meal:hover .menu-box-meal__btn, .menu-box-meal:active .menu-box-meal__btn {
   opacity: 1;
   transform: scalex(1);
 }
-.menu-box-plat:hover .menu-box-plat__btn > .menu-box-plat__icon, .menu-box-plat:active .menu-box-plat__btn > .menu-box-plat__icon {
+.menu-box-meal:hover .menu-box-meal__btn > .menu-box-meal__icon, .menu-box-meal:active .menu-box-meal__btn > .menu-box-meal__icon {
   animation: rotation-360 500ms ease-out forwards;
 }
-.menu-box-plat__body {
-  width: 18rem;
+.menu-box-meal__body {
+  width: 20rem;
   padding-left: 0.5rem;
   transition: width 450ms ease-out;
 }
 @media all and (min-width: 768px) {
-  .menu-box-plat__body {
-    width: 33rem;
+  .menu-box-meal__body {
+    width: 35rem;
   }
 }
 @media all and (min-width: 992px) {
-  .menu-box-plat__body {
-    width: 22.5rem;
+  .menu-box-meal__body {
+    width: 24rem;
   }
 }
-.menu-box-plat__titre {
+.menu-box-meal__title {
   margin: 0.1rem 0;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.menu-box-plat__txt {
+.menu-box-meal__text {
   margin: 0;
   font-size: 0.95rem;
   font-weight: lighter;
@@ -496,16 +481,11 @@ h4, .menu-entete__titre, .loader-box__text {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.menu-box-plat__prix {
+.menu-box-meal__price {
   display: inline-block;
-  padding: 1.5rem 0rem 0 0.5rem;
+  padding: 1.5rem 1rem 0 0.5rem;
 }
-@media all and (min-width: 992px) {
-  .menu-box-plat__prix {
-    width: 3.5rem;
-  }
-}
-.menu-box-plat__btn {
+.menu-box-meal__btn {
   position: absolute;
   right: 0;
   background-color: #99E2D0;
@@ -517,7 +497,7 @@ h4, .menu-entete__titre, .loader-box__text {
   transform-origin: right;
   transition: all 450ms ease-out;
 }
-.menu-box-plat__icon {
+.menu-box-meal__icon {
   display: block;
   font-size: 1.5rem;
   font-weight: bold;
@@ -540,7 +520,7 @@ h4, .menu-entete__titre, .loader-box__text {
   display: flex;
   align-items: center;
 }
-.footer__txt {
+.footer__text {
   margin: 0;
 }
 .footer__icon {
@@ -563,13 +543,24 @@ h4 {
   }
 }
 
+/* ------ section reservation page d'accueil ------*/
 .section-reservation {
   display: flex;
   flex-direction: column;
   row-gap: 0.4rem;
+  padding: 3rem 2rem;
+  background-color: #f6f6f6;
 }
 .section-reservation h1 {
+  margin: 0;
+  text-align: center;
   font-weight: 900;
+}
+.section-reservation p {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 1.1rem;
+  color: #7d7d7d;
 }
 
 .accueil-h2 {
@@ -603,14 +594,6 @@ h4 {
   }
 }
 
-.lien-restaurant {
-  text-decoration: none;
-  color: black;
-  width: 21rem;
-  height: 15rem;
-  border-radius: 1.6rem;
-}
-
 .restaurant-card {
   width: 100%;
   height: 100%;
@@ -642,10 +625,10 @@ h4 {
 .restaurant-card__body {
   padding: 0 1rem;
 }
-.restaurant-card__titre {
+.restaurant-card__title {
   margin-bottom: 0;
 }
-.restaurant-card__soustitre {
+.restaurant-card__subtitle {
   margin-top: 0.3rem;
 }
 .restaurant-card__icon {
@@ -654,7 +637,7 @@ h4 {
   font-size: 1.5rem;
   position: absolute;
 }
-.restaurant-card__icon:hover::after {
+.restaurant-card__icon:hover::after, .restaurant-card__icon:active::after {
   opacity: 1;
 }
 .restaurant-card__icon::after {
@@ -666,6 +649,7 @@ h4 {
   background-clip: text;
   color: transparent;
   opacity: 0;
+  transform-origin: bottom;
   transition: opacity 1s ease-in-out;
 }
 
