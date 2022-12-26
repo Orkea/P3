@@ -14,6 +14,10 @@
     border-radius: 2rem;
     border:none;
     @include ombre;
+        &:hover{
+            background: linear-gradient(180deg,lighten($color-secondary, 5%) 0%, lighten($color-primary, 5%) 80%);
+            @include ombre-hover;
+        }
 }
 
 @mixin color-light ($couleur){
@@ -52,12 +56,6 @@
     align-items: center;
 }
 
-@mixin position-center{
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-}
 @mixin border-r{
     border-radius: $size-border-r;
 }

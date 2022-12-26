@@ -1,6 +1,0 @@
-.restaurant{
-    margin-bottom: $size-top;
-    @include tablet{
-        margin-bottom: ($size-top - 1rem);
-    }
-}

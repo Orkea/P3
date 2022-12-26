@@ -1,5 +1,12 @@
+.restaurant{
+    margin-bottom: $size-top;
+    @include tablet{
+        margin-bottom: ($size-top - 1rem);
+    }
+}
+
 /* --------section fonctionnement ------ */
-.section-fonctionnement{
+.functional-section{
     @include desktop{
         margin: 4rem 0;
     }
@@ -185,10 +192,10 @@
         padding:1.5rem;
         border-radius: 0 1rem 1rem 0;
         opacity: 0;
-        width: 72px;
+        width: 4.5rem;
         transform: scalex(0);
         transform-origin: right;
-        transition: all 450ms ease-out;
+        transition: opacity 450ms ease-out;
     }
     &__icon{
         display: block;
