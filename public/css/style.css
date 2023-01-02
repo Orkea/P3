@@ -573,6 +573,7 @@ h4 {
   box-shadow: 0.4rem 0.4rem 0.3rem rgb(210, 200, 200);
 }
 .restaurant-card__container {
+  position: relative;
   height: 10rem;
   border-radius: 1.6rem 1.6rem 0 0;
 }
@@ -585,7 +586,7 @@ h4 {
 .restaurant-card__new {
   position: absolute;
   top: 0.5rem;
-  left: 16rem;
+  right: 1rem;
   padding: 0.3rem;
   background-color: #99E2D0;
   color: #2c9c81;

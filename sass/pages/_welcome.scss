@@ -51,6 +51,7 @@
     @include border-r;
     @include ombre;
     &__container{
+        position: relative;
         height:10rem ;
         border-radius: $size-border-r $size-border-r 0 0;
     }
@@ -63,7 +64,7 @@
     &__new{
         position:absolute;
         top:.5rem;
-        left:16rem;
+        right: 1rem;
         padding: .3rem;
         background-color: $color-tertiary;
         @include color-dark ($color-tertiary);
