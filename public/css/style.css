@@ -446,7 +446,7 @@ h4, .menu-header__title, .loader-box__text {
 }
 @media all and (min-width: 992px) {
   .menu-box-meal__body {
-    width: 24rem;
+    width: 22rem;
   }
 }
 .menu-box-meal__title {
