@@ -141,14 +141,11 @@
     &:hover, &:active{
         cursor:pointer;
             & .menu-box-meal__body{
-                width:calc(20rem - $size-subst-width);
-                @include tablet{
-                width:calc(35rem - $size-subst-width);   
-                }
-               @include desktop{
-                width:calc(26rem - $size-subst-width);
-                }
-            }            
+                @include menu-box-meal-width-hover;
+            }  
+            &  .menu-box-meal__price{
+                transform: translateX(-4.5rem);
+            }         
             &  .menu-box-meal__btn{
                 opacity: 1;
                 transform: scalex(1);
@@ -159,15 +156,9 @@
     }
 
     &__body{
-        width:20rem;
         padding-left: .5rem;
         transition: width 450ms ease-out;
-        @include tablet{
-            width: 35rem;
-        }
-       @include desktop{
-            width: 24rem;
-        }
+        @include menu-box-meal-width;
     }
     &__title{
         margin: .1rem 0;
@@ -180,8 +171,10 @@
         @include txt-hidden;
     }
     &__price{
-        display: inline-block;
-        padding: 1.5rem 1rem 0 0.5rem;
+        position: absolute;
+        right: 1rem;
+        bottom:1rem;
+        transition: transform 450ms ease-out;
         
     }
     
@@ -195,7 +188,7 @@
         width: 4.5rem;
         transform: scalex(0);
         transform-origin: right;
-        transition: all 650ms ease-out;
+        transition: all 450ms ease-out;
     }
     &__icon{
         display: block;

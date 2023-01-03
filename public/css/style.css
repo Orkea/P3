@@ -365,7 +365,7 @@ h4, .menu-header__title, .loader-box__text {
   background-clip: text;
   color: transparent;
   opacity: 0;
-  transform-origin: bottom;
+  /*transform-origin: bottom;*/
   transition: opacity 1s ease-in-out;
 }
 
@@ -416,13 +416,16 @@ h4, .menu-header__title, .loader-box__text {
 }
 @media all and (min-width: 768px) {
   .menu-box-meal:hover .menu-box-meal__body, .menu-box-meal:active .menu-box-meal__body {
-    width: 28.5rem;
+    width: 35rem;
   }
 }
 @media all and (min-width: 992px) {
   .menu-box-meal:hover .menu-box-meal__body, .menu-box-meal:active .menu-box-meal__body {
-    width: 19.5rem;
+    width: 13.5rem;
   }
+}
+.menu-box-meal:hover .menu-box-meal__price, .menu-box-meal:active .menu-box-meal__price {
+  transform: translateX(-4.5rem);
 }
 .menu-box-meal:hover .menu-box-meal__btn, .menu-box-meal:active .menu-box-meal__btn {
   opacity: 1;
@@ -432,9 +435,9 @@ h4, .menu-header__title, .loader-box__text {
   animation: rotation-360 500ms ease-out forwards;
 }
 .menu-box-meal__body {
-  width: 20rem;
   padding-left: 0.5rem;
   transition: width 450ms ease-out;
+  width: 20rem;
 }
 @media all and (min-width: 768px) {
   .menu-box-meal__body {
@@ -461,8 +464,10 @@ h4, .menu-header__title, .loader-box__text {
   text-overflow: ellipsis;
 }
 .menu-box-meal__price {
-  display: inline-block;
-  padding: 1.5rem 1rem 0 0.5rem;
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  transition: transform 450ms ease-out;
 }
 .menu-box-meal__btn {
   position: absolute;
@@ -474,7 +479,7 @@ h4, .menu-header__title, .loader-box__text {
   width: 4.5rem;
   transform: scalex(0);
   transform-origin: right;
-  transition: all 650ms ease-out;
+  transition: all 450ms ease-out;
 }
 .menu-box-meal__icon {
   display: block;
@@ -619,7 +624,7 @@ h4 {
   background-clip: text;
   color: transparent;
   opacity: 0;
-  transform-origin: bottom;
+  /*transform-origin: bottom;*/
   transition: opacity 1s ease-in-out;
 }
 

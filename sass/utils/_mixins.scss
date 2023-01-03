@@ -45,7 +45,7 @@
             background-clip:text;
             color:transparent;
             opacity: 0;
-            transform-origin: bottom;
+            /*transform-origin: bottom;*/
             transition: opacity 1s ease-in-out; 
         }
 }
@@ -83,3 +83,24 @@
         @content;
     }   
 } 
+
+@mixin menu-box-meal-width{
+    width: map-get($map: $menu-box-meal-width, $key:mobile-width);
+    
+    @include tablet{
+        width: map-get($map: $menu-box-meal-width, $key:tablet-width);
+    }
+    @include desktop{
+        width: map-get($map: $menu-box-meal-width, $key: desktop-width);
+    }
+}
+@mixin menu-box-meal-width-hover{
+    width: map-get($map: $menu-box-meal-width, $key:mobile-desktop-width-hover);
+    
+    @include tablet{
+        width: map-get($map: $menu-box-meal-width, $key:tablet-width);
+    }
+    @include desktop{
+        width: map-get($map: $menu-box-meal-width, $key: mobile-desktop-width-hover);
+    }
+}
