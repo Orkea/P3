@@ -394,7 +394,7 @@ h4, .menu-header__title, .loader-box__text {
   cursor: pointer;
 }
 .menu-box-meal:hover .menu-box-meal__body, .menu-box-meal:active .menu-box-meal__body {
-  width: 11.5rem;
+  width: 11.4rem;
 }
 @media all and (min-width: 768px) {
   .menu-box-meal:hover .menu-box-meal__body, .menu-box-meal:active .menu-box-meal__body {
@@ -450,6 +450,7 @@ h4, .menu-header__title, .loader-box__text {
   position: absolute;
   right: 0.5rem;
   bottom: 1rem;
+  font-size: 0.9rem;
   transition: transform 450ms ease-out;
 }
 .menu-box-meal__btn {
