@@ -11,9 +11,12 @@
 .restaurant-link{
     text-decoration: none;
     color: black;
-    width:21rem;
+    width:18.9rem;
     height:15rem;
     @include border-r;
+     @include tablet{
+        width:19rem;
+     }
 }
 
 .footer__link{

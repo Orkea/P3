@@ -76,9 +76,14 @@ h4, .menu-header__title, .loader-box__text {
 .restaurant-link {
   text-decoration: none;
   color: black;
-  width: 21rem;
+  width: 18.9rem;
   height: 15rem;
   border-radius: 1.6rem;
+}
+@media all and (min-width: 768px) {
+  .restaurant-link {
+    width: 19rem;
+  }
 }
 
 .footer__link {
@@ -276,7 +281,7 @@ h4, .menu-header__title, .loader-box__text {
   font-weight: bold;
   background-color: #eaeaea;
   margin: 2rem;
-  padding: 1.9rem;
+  padding: 1.6rem;
   column-gap: 0.9rem;
   display: flex;
   justify-content: center;
@@ -324,10 +329,10 @@ h4, .menu-header__title, .loader-box__text {
   padding-top: 1.2rem;
 }
 .menu-header__title {
-  font-size: 1.8rem;
+  font-size: 1.55rem;
 }
 .menu-header__icon {
-  padding-left: 19rem;
+  padding-left: 16.5rem;
   font-size: 1.5rem;
   position: absolute;
 }
@@ -389,7 +394,7 @@ h4, .menu-header__title, .loader-box__text {
   cursor: pointer;
 }
 .menu-box-meal:hover .menu-box-meal__body, .menu-box-meal:active .menu-box-meal__body {
-  width: 13.5rem;
+  width: 11.5rem;
 }
 @media all and (min-width: 768px) {
   .menu-box-meal:hover .menu-box-meal__body, .menu-box-meal:active .menu-box-meal__body {
@@ -414,7 +419,7 @@ h4, .menu-header__title, .loader-box__text {
 .menu-box-meal__body {
   padding-left: 0.5rem;
   transition: width 450ms ease-out;
-  width: 20rem;
+  width: 15.5rem;
 }
 @media all and (min-width: 768px) {
   .menu-box-meal__body {
@@ -428,13 +433,14 @@ h4, .menu-header__title, .loader-box__text {
 }
 .menu-box-meal__title {
   margin: 0.1rem 0;
+  font-size: 1rem;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 .menu-box-meal__text {
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   font-weight: lighter;
   overflow: hidden;
   white-space: nowrap;
@@ -442,7 +448,7 @@ h4, .menu-header__title, .loader-box__text {
 }
 .menu-box-meal__price {
   position: absolute;
-  right: 1rem;
+  right: 0.5rem;
   bottom: 1rem;
   transition: transform 450ms ease-out;
 }

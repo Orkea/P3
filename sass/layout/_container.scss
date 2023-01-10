@@ -56,7 +56,7 @@
         font-weight: bold;
         background-color: $color-input;
         margin: 2rem;
-        padding: 1.9rem;
+        padding: 1.6rem;
         column-gap: .9rem;
             @include flex-center;
             @include border-r;      
@@ -100,10 +100,10 @@
     padding-top: 1.2rem ;
     &__title{
         @extend %shri-titre;
-        font-size: 1.8rem;
+        font-size: 1.55rem;
     }
     &__icon{
-        padding-left: 19rem;
+        padding-left: 16.5rem;
         @include heart-move;
     }
 }
@@ -162,17 +162,18 @@
     }
     &__title{
         margin: .1rem 0;
+        font-size: 1rem;
         @include txt-hidden;
     }
     &__text{
         margin:0;
-        font-size: .95rem;
+        font-size: .8rem;
         font-weight:lighter;
         @include txt-hidden;
     }
     &__price{
         position: absolute;
-        right: 1rem;
+        right: .5rem;
         bottom:1rem;
         transition: transform 450ms ease-out;
         

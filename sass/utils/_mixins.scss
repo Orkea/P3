@@ -100,12 +100,12 @@
     }
 }
 @mixin menu-box-meal-width-hover{
-    width: map-get($map: $menu-box-meal-width, $key:mobile-desktop-width-hover);
+    width: map-get($map: $menu-box-meal-width, $key:mobile-width-hover);
     
     @include tablet{
         width: map-get($map: $menu-box-meal-width, $key:tablet-width);
     }
     @include desktop{
-        width: map-get($map: $menu-box-meal-width, $key:mobile-desktop-width-hover);
+        width: map-get($map: $menu-box-meal-width, $key:desktop-width-hover);
     }
 }
