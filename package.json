@@ -12,5 +12,10 @@
   "browserslist": "last 4 versions",
   "dependencies": {
     "sass": "^1.55.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.6.2",
+    "postcss": "^8.5.32",
+    "postcss-cli": "^12.0.0"
   }
 }

@@ -67,10 +67,9 @@ P3/
 
 ### Modifier les styles
 
-Installer les dépendances :
+Installer les dépendances (Sass, PostCSS, Autoprefixer) :
 ```bash
 npm install
-npm install --save-dev postcss postcss-cli autoprefixer
 ```
 
 Compiler le SCSS en continu :
